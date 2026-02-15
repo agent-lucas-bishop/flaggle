@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --gold: #D4AF37;
+  --gold-dark: #B8960F;
+  --gold-light: #F0D060;
+  --navy: #0A1628;
+  --navy-light: #142240;
+  --card: #1A2A44;
+  --card-hover: #223354;
+  --white: #F4F4F8;
+  --dim: #7A8BA8;
+  --correct: #2ECC71;
+  --wrong: #E74C3C;
+  --close: #F39C12;
+  --ring: rgba(212,175,55,0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--navy);
+  color: var(--white);
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(212,175,55,0.06), transparent 50%),
+    radial-gradient(circle at 70% 80%, rgba(46,204,113,0.04), transparent 50%),
+    linear-gradient(180deg, rgba(10,22,40,1) 0%, rgba(20,34,64,0.8) 100%);
+  pointer-events: none;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
